@@ -1,8 +1,7 @@
 import "./hero.css";
 import ButtonCustom from "../Modules/Buttom";
-import { FiArrowRight, FiPlay } from "react-icons/fi";
 import AnimationCursorBackground from "../Effects/AnimationCursorBackground";
-import { LuPhone, LuUser, LuUsers } from "react-icons/lu";
+import { LuPhone, LuUsers } from "react-icons/lu";
 import SplitTextComponent from "../Effects/SplitText/SplitText";
 
 export default function HeroSection() {
