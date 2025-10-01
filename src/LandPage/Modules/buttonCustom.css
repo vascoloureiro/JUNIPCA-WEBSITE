@@ -1,0 +1,13 @@
+
+
+.default-btn-style{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items:flex-end ;
+    gap:10px;
+   
+    cursor: pointer;
+}

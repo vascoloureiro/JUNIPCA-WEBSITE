@@ -1,0 +1,270 @@
+.team-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    margin-top: 4rem;
+
+    background-color: #000000;
+    transition: background-color 0.6s ease;
+    color: white;
+}
+
+
+.team-section.active {
+    background-color: black;
+   
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.team-section h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #000000;
+
+    text-align: center;
+}
+
+.wrapper-profile-cards {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    gap:1rem;
+    z-index: 1;
+}
+
+.profile-cards {
+    width: 90%;
+
+    justify-self: center;
+    background: #262626;
+    border-radius: 24px;
+    overflow: visible;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    padding:1rem;
+}
+
+.profile-cards:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.5);
+}
+
+.container-image {
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    background: #4a4a4a79;
+    border-radius: 22px;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-image::after {
+    display: none;
+}
+
+.container-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 22px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s ease;
+}
+
+.profile-cards:hover .container-image img {
+    transform: scale(1.05);
+}
+
+.container-content {
+    padding: 0;
+    background: transparent;
+    text-align: center;
+}
+
+.container-content p:first-child {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.container-content p:first-child::after {
+    content: '✓';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background: #10b981;
+    color: white;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.container-content p:last-child {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #9ca3af;
+    text-transform: none;
+    letter-spacing: 0;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.container-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 16px;
+    color: #e5e7eb;
+    font-size: 0.95rem;
+}
+
+.container-stats span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.container-button {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.profile-cards {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+.team-footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-footer > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border:none;
+    border-radius:14px;
+    padding: .75rem;
+    cursor: pointer;
+}
+
+.profile-cards {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+.team-footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+/* Responsivo para tablets (3 cards) */
+@media (max-width: 1200px) {
+    .team-section h1 {
+        font-size: 3rem;
+
+    }
+
+    .wrapper-profile-cards {
+        width: 95%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .profile-cards{
+        width: 85%;
+    }
+}
+
+/* Responsivo para mobile (2 cards) */
+@media (max-width: 768px) {
+    .team-section {
+        padding: 60px 15px;
+    }
+
+    .team-section h1 {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+    }
+
+    .wrapper-profile-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .container-image {
+        height: 220px;
+    }
+
+    .container-content {
+        padding: 20px 15px;
+    }
+
+    .container-content p:first-child {
+        font-size: 1.2rem;
+    }
+
+    .container-content p:last-child {
+        font-size: 0.85rem;
+    }
+}
+
+/* Responsivo para mobile muito pequeno (1 card) */
+@media (max-width: 480px) {
+    .wrapper-profile-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .container-image {
+        height: 280px;
+    }
+}
+
+/* Animação de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

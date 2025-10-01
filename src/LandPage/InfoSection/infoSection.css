@@ -1,0 +1,54 @@
+/* InfoSection base */
+.info-section {
+  padding: 1.5rem 0;
+}
+
+.info-section h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Texto interno */
+.info-section p {
+  margin-bottom: 1rem;
+}
+
+/* Listas */
+.info-section ul {
+  padding-left: 1.5rem;
+  list-style: disc;
+  margin-bottom: 1rem;
+}
+
+.info-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Variant: highlight */
+.info-section.highlight {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-left: 4px solid black;
+}
+
+.info-section.alter-highlight{
+    background-color: white;
+    padding: 2rem;
+    border-left: 4px solid rgb(217, 217, 217);
+}
+
+/* Variant: warning */
+.info-section.warning {
+  background-color: rgb(254, 245, 245);
+  border-left: 4px solid rgb(239, 67, 67);
+  padding: 2rem;
+}
+
+/* Títulos internos */
+.info-section h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}

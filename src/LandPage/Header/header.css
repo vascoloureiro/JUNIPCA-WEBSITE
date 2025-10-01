@@ -1,0 +1,191 @@
+.menu-container{
+    position: absolute;
+    width: fit-content;
+    top: 3rem;
+    left: 2rem;
+    background-color: transparent;
+    z-index: 2;
+}
+
+.menu-container > button {
+    border: none;
+    background-color:transparent;
+    cursor: pointer;
+}
+
+.header-main-container {
+    width: 50%;
+    max-width: 626px;
+    height: 65px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+    
+    border-radius: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    
+    margin: 1.5rem;
+    padding: 0.5rem;
+
+    background: rgba(255, 255, 255, 0.321); 
+    backdrop-filter: blur(12px) saturate(150%); 
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    z-index: 2;
+    color:white;
+}
+
+.left-header-container{
+    width: fit-content;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: .75rem;
+    border-radius: 18px;
+    
+    background: rgb(255, 255, 255); 
+    backdrop-filter: blur(18px) saturate(150%); 
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    box-shadow: 0 4px 20px rgba(241, 238, 238, 0); 
+    cursor: pointer;
+}
+
+.left-header-container > img {
+    width: 80px;
+    height: auto;
+}
+
+.right-header-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:1.75rem;
+    margin-right: 1.5rem;
+    background-color: transparent;
+}   
+
+.right-header-container > button {
+    border:none;
+    background-color: transparent;
+    color: white;
+    font-weight: 300;
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+
+.right-header-container > button:hover{
+    font-weight: 600;
+}
+
+/* ============================================
+   MEDIA QUERIES - RESPONSIVIDADE
+   ============================================ */
+
+/* Tablets grandes e desktops pequenos */
+@media (max-width: 1024px) {
+    .header-main-container {
+        width: 70%;
+        margin: 1.25rem;
+    }
+    
+    .right-header-container {
+        gap: 1.25rem;
+        margin-right: 1rem;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .menu-container {
+        top: 2rem;
+        left: 1.5rem;
+    }
+    
+    .header-main-container {
+        width: 85%;
+        height: 60px;
+        margin: 1rem;
+        padding: 0.4rem;
+    }
+    
+    .left-header-container {
+        padding: 0.5rem;
+    }
+    
+    .left-header-container > img {
+        width: 60px;
+    }
+    
+    .right-header-container {
+        gap: 1rem;
+        margin-right: 0.75rem;
+    }
+    
+    .right-header-container > button {
+        font-size: 0.9rem;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+    .menu-container {
+        top: 1.5rem;
+        left: 1rem;
+    }
+    
+    .header-main-container {
+        width: 90%;
+        height: 55px;
+        margin: 0.75rem;
+        padding: 0.3rem;
+        border-radius: 20px;
+    }
+    
+    .left-header-container {
+        padding: 0.4rem;
+        border-radius: 14px;
+    }
+    
+    .left-header-container > img {
+        width: 45px;
+    }
+    
+    .right-header-container {
+        gap: 0.75rem;
+        margin-right: 0.5rem;
+    }
+    
+    .right-header-container > button {
+        font-size: 0.85rem;
+        font-weight: 400;
+    }
+    
+    .right-header-container > button:hover {
+        font-weight: 500;
+    }
+}
+
+/* Smartphones muito pequenos */
+@media (max-width: 360px) {
+    .header-main-container {
+        width: 95%;
+        height: 50px;
+        margin: 0.5rem;
+    }
+    
+    .left-header-container > img {
+        width: 40px;
+    }
+    
+    .right-header-container {
+        gap: 0.5rem;
+    }
+    
+    .right-header-container > button {
+        font-size: 0.8rem;
+    }
+}

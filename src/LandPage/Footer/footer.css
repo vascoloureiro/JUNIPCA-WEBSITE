@@ -1,0 +1,150 @@
+/* ---------- Cores base (ajuste se necessário) ---------- */
+:root {
+  --foreground: #ffffff;   /* cor de fundo escuro             */
+  --background: #ffffff;   /* cor de texto/base clara          */
+}
+
+/* ---------- Estilos gerais ---------- */
+.footer {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+.footer a {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: #000000;
+}
+
+/* ---------- Layout ---------- */
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+   color: #000000;
+}
+
+.footer__grid {
+  display: grid;
+  
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .footer__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ---------- Logo & topo ---------- */
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer__logo-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color:#000000;
+}
+
+/* ---------- Texto secundário ---------- */
+.footer__muted {
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 1rem;
+}
+
+/* ---------- Ícones sociais ---------- */
+.footer__social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footer__icon,
+.footer__icon-small {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.footer__icon:hover,
+.footer__icon-small:hover {
+  color: #000000;
+}
+
+/* ---------- Listas ---------- */
+.footer__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+   color: #000000;
+}
+
+.footer__list ul,
+.footer__list li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+   color: #000000;
+}
+
+.footer__list li + li {
+  margin-top: 0.5rem;
+   color: #000000;
+}
+
+/* ---------- Contacto ---------- */
+.footer__contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* ---------- Rodapé inferior ---------- */
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 3rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+   color: #000000;
+}
+
+@media (min-width: 768px) {
+  .footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer__bottom-links {
+  display: flex;
+  gap: 1.5rem;
+   color: #000000;
+}
+
+.footer__bottom-links a {
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.footer__bottom-links a:hover {
+  color: #000000;
+}
+
+.footer-logo-image{
+  width: 220px;
+  height: auto;
+}

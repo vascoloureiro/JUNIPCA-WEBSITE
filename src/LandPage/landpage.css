@@ -1,0 +1,13 @@
+.landpage-main-container{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+.landpage-sidebar-wrapper{
+    position: absolute;
+    height: 85dvh;
+    
+    background-color: red;
+}
