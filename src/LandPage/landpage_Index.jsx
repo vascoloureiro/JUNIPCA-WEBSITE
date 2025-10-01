@@ -4,7 +4,7 @@ import Footer from './Footer/Footer';
 import HeroSection from './Hero/Hero';
 import Features from './Features/FeaturesSection';
 import WhoAreWe from './WhoAreWe/WhoAreWe';
-import Team from './Team/team';
+import Team from './Team/TeamComponet';
 
 
 export default function LandPageIndex() {
