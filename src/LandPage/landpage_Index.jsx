@@ -1,10 +1,10 @@
 import './landpage.css';
-import HeaderLandPage from './Header/Header.tsx';
+import HeaderLandPage from './Header/Header';
 import Footer from './Footer/Footer';
-import HeroSection from './Hero/Hero.tsx';
-import Features from './Features/FeaturesSection.tsx';
-import WhoAreWe from './WhoAreWe/WhoAreWe.tsx';
-import Team from './Team/team.tsx';
+import HeroSection from './Hero/Hero';
+import Features from './Features/FeaturesSection';
+import WhoAreWe from './WhoAreWe/WhoAreWe';
+import Team from './Team/team';
 
 
 export default function LandPageIndex() {
