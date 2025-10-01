@@ -16,7 +16,6 @@ export default function HeroSection() {
       </div>
       <div className="container">
         <div className="hero-grid">
-
           <div className="hero-content">
 
             <div className="hero-text">
