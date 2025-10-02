@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import './header.css';
 
 import { LuFacebook, LuInstagram, LuLinkedin, LuMenu, LuX } from 'react-icons/lu';
-import SideBar from '../../SideBarMenu/SideBar';
+import SideBar from '../SideBarMenu/SideBar';
 import { useState } from 'react';
 
 export default function HeaderLandPage() {
@@ -69,7 +69,7 @@ export default function HeaderLandPage() {
                     className="left-header-container"
                     onClick={() => setOpenSideBar(true)}
                 >
-                    <img src="./JUNIPCA_logo.png" alt="JUNIPCA Logo" />
+                    <img src="./JUNIPCA_logo-white.png" alt="JUNIPCA Logo" />
                 </div>
 
                 <div className="right-header-container">

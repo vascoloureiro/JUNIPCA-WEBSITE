@@ -5,6 +5,7 @@
     justify-content: center;
     gap:2rem;
     margin-top: 4rem;
+    padding-top: 3rem;
 
     background-color: #000000;
     transition: background-color 0.6s ease;
@@ -40,14 +41,13 @@
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap:1rem;
     z-index: 1;
 }
 
 .profile-cards {
-    width: 90%;
-
+    width: 100%;
     justify-self: center;
     background: #262626;
     border-radius: 24px;
@@ -156,8 +156,6 @@
     justify-content: center;
 }
 
-
-
 .profile-cards {
     animation: fadeInUp 0.6s ease forwards;
     opacity: 0;
@@ -190,9 +188,21 @@
 .team-footer{
     width: 100%;
     display: flex;
-    align-items: center;
-    
+    align-items: center;   
 }
+
+.team-footer > button {
+     padding: 16px 36px;
+    background-color: white;
+    color: black;
+    transition: 0.4s ease-in-out;
+}
+
+.team-footer > button:hover {
+    box-shadow: 0px 0px 100px #10b981; /* deslocamento x, y, blur e a cor */
+
+}
+
 /* Responsivo para tablets (3 cards) */
 @media (max-width: 1200px) {
     .team-section h1 {
@@ -202,11 +212,7 @@
 
     .wrapper-profile-cards {
         width: 95%;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .profile-cards{
-        width: 85%;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -247,7 +253,11 @@
 /* Responsivo para mobile muito pequeno (1 card) */
 @media (max-width: 480px) {
     .wrapper-profile-cards {
-        grid-template-columns: 1fr;
+         grid-template-columns: repeat(1, 1fr);
+    }
+    .profile-cards{
+        width: 100%;
+        background-color: red;
     }
 
     .container-image {

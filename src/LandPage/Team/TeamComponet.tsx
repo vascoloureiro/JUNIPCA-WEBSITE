@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./team.css";
+import "../Pricing/pricing.css"
 import { LuUsers } from "react-icons/lu";
 
 export default function Team() {
@@ -47,38 +48,7 @@ export default function Team() {
       name: "Gajo",
       role: "Markting",
     },
-    {
-      imgProfile: "/profileImage.jpeg",
-      name: "Gajo",
-      role: "Markting",
-    },
-    {
-      imgProfile: "/profileImage.jpeg",
-      name: "Gajo",
-      role: "Markting",
-    },
   ];
-
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const entry = entries[0];
-        setIsVisible(entry.isIntersecting); // true se a section está visível
-      },
-      { threshold: 0.5 } // dispara quando 50% da section estiver visível
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
 
   return (
     <section
@@ -89,8 +59,7 @@ export default function Team() {
       <div className="pricing-header">
         <h2 className="pricing-title">Conheça a nossa Equipa</h2>
         <p className="pricing-subtitle">
-          Escolha o plano ideal para a sua empresa. Todos os planos incluem 14
-          dias de teste grátis sem compromisso.
+          A nossa equipa está pronta para transformar ideias em resultados.
         </p>
       </div>
       <div className="wrapper-profile-cards">

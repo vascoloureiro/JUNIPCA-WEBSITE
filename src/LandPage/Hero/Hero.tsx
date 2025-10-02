@@ -19,7 +19,7 @@ export default function HeroSection() {
           <div className="hero-content">
 
             <div className="hero-text">
-              <h1>
+              <h1 className="hero-title">
                 <SplitTextComponent
                   text="JUNIPCA"
                   delay={60}

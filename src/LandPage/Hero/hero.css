@@ -1,7 +1,7 @@
 .hero-section {
-  min-height: fit-content;
+  min-height: 100dvh;
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 }
 
@@ -9,11 +9,11 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
-  z-index:5;
+  z-index: 5;
 }
 
 .free-test {
-background-color:#22c55e;
+  background-color: #22c55e;
   color: white;
   border: 1px solid #22c55e;
   border-radius: 12px;
@@ -28,10 +28,9 @@ background-color:#22c55e;
   margin-bottom: 8px;
 }
 
-
 .hero-grid {
   display: flex;
- 
+
   gap: 2rem;
   align-items: center;
   justify-content: center;
@@ -40,6 +39,22 @@ background-color:#22c55e;
 @media (min-width: 1024px) {
   .hero-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 726px) {
+
+  .free-test {
+    width: fit-content;
+    padding: 1rem;
+    text-wrap: nowrap;
+    font-size: 14px;
+  }
+
+  .see-demo {
+    text-wrap: nowrap;
+    font-size: 14px;
+   padding: 1rem;
   }
 }
 
@@ -55,19 +70,16 @@ background-color:#22c55e;
 
 .hero-text {
   margin-top: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   color: white;
 }
+
 
 .hero-title {
   font-size: 32px;
   font-weight: 700;
   color: white;
   line-height: 1.2;
-  margin: 0;
+
 }
 
 @media (min-width: 768px) {
@@ -78,7 +90,7 @@ background-color:#22c55e;
 
 @media (min-width: 1024px) {
   .hero-title {
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -87,14 +99,14 @@ background-color:#22c55e;
 }
 
 .hero-subtitle {
-  font-size: 1.25rem;
-  color:rgb(179, 179, 179)e;
-  max-width: 36rem;
+  font-size: 1rem;
+  color: rgb(247, 247, 247);
+  text-align: center;
 }
 
 .hero-buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
 }
 
@@ -119,38 +131,9 @@ background-color:#22c55e;
 .highlight-dot {
   width: 0.5rem;
   height: 0.5rem;
-  border-radius: 9999px;
+  border-radius: 100%;
 }
 
 .highlight-dot.green {
   background-color: #22c55e;
-}
-
-.hero-image-wrapper {
-  position: relative;
-  animation: float 5s ease-in-out infinite;
-}
-
-.hero-image-container {
-  position: relative;
-  border-radius: 1rem;
-  overflow: hidden;
-
-}
-
-.hero-image {
-  width: 100%;
-  height: auto;
-}
-
-@keyframes float {
-
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
 }

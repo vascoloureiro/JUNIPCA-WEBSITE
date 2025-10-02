@@ -1,0 +1,101 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Corpo principal */
+.info-page {
+  min-height: 100vh;
+  background: rgb(255, 255, 255);
+  padding: 2rem 1rem;
+}
+
+.info-page .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Botão de voltar */
+.back-button {
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.back-button a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  color: #1f2937;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.back-button a:hover {
+  background-color: rgba(100, 116, 139, 0.1); /* hover:bg-accent/10 */
+}
+
+/* Cartão */
+.card {
+  border: 1px solid rgba(214, 214, 214, 0.3); /* border-border/50 */
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); /* shadow-elegant */
+  background-color: white;
+  overflow: hidden;
+}
+
+.card-header {
+  text-align: center;
+  padding: 2rem 1.5rem 0.5rem;
+}
+
+.card-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #111827; /* text-foreground */
+}
+
+.card-header p {
+  font-size: 1.25rem;
+  color: #6b7280; /* text-muted-foreground */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Info como data e tempo */
+.card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.card-meta div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Conteúdo */
+.card-content {
+  padding: 2rem;
+  color: #111827;
+}
+
+.card-content > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  line-height: 1.7;
+  font-size: 1.125rem;
+}

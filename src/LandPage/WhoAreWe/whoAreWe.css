@@ -1,12 +1,12 @@
 .junipca-section {
-    padding: 120px 20px 60px;
+    padding: 6rem;
     position: relative;
 }
 
 .junipca-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 0rem 1rem;
 }
 
 .junipca-content-wrapper {
