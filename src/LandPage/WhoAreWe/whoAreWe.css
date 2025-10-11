@@ -1,10 +1,10 @@
 .junipca-section {
     padding: 6rem;
     position: relative;
+    margin: 2rem;
 }
 
 .junipca-container {
-    max-width: 1400px;
     margin: 0 auto;
     padding: 0rem 1rem;
 }
@@ -70,11 +70,9 @@
 }
 
 .junipca-image-side>img {
-    width: 100%;
     height: auto;
     max-width: 100%;
     object-fit: contain;
-    padding: 3.5rem;
     transition: transform 0.3s ease;
 }
 
@@ -82,8 +80,24 @@
     transform: scale(1.02);
 }
 
+@media (min-width: 1024px) {
+    .junipca-section {
+        padding: 4rem;
+
+    }
+
+
+
+}
+
 /* Tablets e telas médias */
 @media (max-width: 1024px) {
+
+    .junipca-section {
+        padding: 4rem;
+
+    }
+
     .junipca-container {
         padding: 3rem 1.5rem;
     }
@@ -99,10 +113,6 @@
 
     .junipca-image-side {
         min-height: 450px;
-    }
-
-    .junipca-image-side>img {
-        padding: 2rem;
     }
 }
 
@@ -134,10 +144,6 @@
 
     .junipca-image-side {
         min-height: 350px;
-    }
-
-    .junipca-image-side>img {
-        padding: 1.5rem;
     }
 
     .value-item {
@@ -179,15 +185,12 @@
     }
 
     .junipca-image-side {
+        
         min-height: 280px;
     }
 
-    .junipca-image-side>img {
-        padding: 1rem;
-    }
-
     .junipca-image-side img:hover {
-        transform: scale(1.01);
+        transform: scale(1.51);
     }
 }
 
@@ -204,9 +207,5 @@
 
     .junipca-image-side {
         min-height: 240px;
-    }
-
-    .junipca-image-side>img {
-        padding: 0.75rem;
     }
 }

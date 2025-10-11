@@ -22,7 +22,7 @@ export default function CardContent({
     return (<>
         <div className="custom-card group">
             <div className="icon-container">
-                <Icon  size={22} />
+                <Icon size={22} />
             </div>
 
             <div className="highlight-badge">
@@ -33,10 +33,10 @@ export default function CardContent({
 
             <p>{description}</p>
 
-            <div className="more-info">
+            {/* <div className="more-info">
                 <span>Saber mais</span>
                 <LuArrowRight className="h-4 w-4" />
-            </div>
+            </div> */}
 
         </div>
 

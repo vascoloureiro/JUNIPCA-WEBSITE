@@ -4,6 +4,7 @@ import './sidebar.css'
 type SocialType = {
     icon: React.ReactNode;
     titleIcon:string;
+    handleSocialClick: ()=> void;
 }
 
 type SideBarType = {
@@ -22,6 +23,7 @@ export default function SideBar({
     handleCloseSideBar,
 
     socialFooter,
+
 }: SideBarType) {
 
 
@@ -60,7 +62,10 @@ export default function SideBar({
                         key={index}
                     >
                         <p>{content.titleIcon}</p>
-                        <button>
+                        
+                        <button
+                            onClick={() => {content.handleSocialClick()}}
+                        >
                             {content.icon}
                         </button>
                     </div>

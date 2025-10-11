@@ -1,6 +1,7 @@
 import { LuArrowLeft, LuCalendar, LuClock } from 'react-icons/lu';
 import './infoPages.css'; // adicione essa linha no topo
 import { ReactNode } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 type InfoPageProps = {
     title?: string,
@@ -22,12 +23,15 @@ export default function InfoPage({
     children
 
 }: InfoPageProps) {
+
+    const navigate = useNavigate();
+
     return (
         <div className="info-page">
-            <div className="container">
+            <div className="info-container">
                 {showBackButton && (
                     <div className="back-button">
-                        <a href={backUrl}>
+                        <a onClick={() => {navigate('/')}}>
                             <LuArrowLeft className="icon" />
                             Voltar
                         </a>

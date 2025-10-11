@@ -11,7 +11,7 @@
     justify-content: flex-start;
     
     background-color: white;
-    z-index: 99;
+    z-index: 100;
     border-right: 1px solid black;
     
     /* Animação de entrada */
@@ -58,7 +58,7 @@
     align-items: center;
     justify-content: space-between;
     
-    margin-top: .75rem;  
+    margin-top: 1.5rem; 
 }
 
 .sidebar-header > button{
@@ -77,7 +77,8 @@
 }
 
 .sidebar-header > img {
-    width: 105px;
+    width: 85px;
+    margin-left: .75rem;
     height: auto;
 }
 
@@ -97,7 +98,7 @@
 .sidebar-content > button {
     position: relative;
     width: fit-content;
-    font-size: 2rem;
+    font-size: 3rem;
     display: flex;
     align-items: flex-start;
     font-weight: 500;
@@ -135,7 +136,8 @@
 }
 
 .sidebar-footer > div > button{
-    background-color: transparent;
+    padding: 1rem;
+    background-color:transparent;
     border: none;
     cursor: pointer;
     transition: transform 0.2s ease;
@@ -157,7 +159,7 @@
     }
     
     .sidebar-content > button {
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
 }
 
@@ -168,7 +170,7 @@
     }
     
     .sidebar-content > button {
-        font-size: 1.5rem;
+       font-size: 2rem;
         gap: 1.5rem;
     }
     
@@ -188,11 +190,11 @@
     }
     
     .sidebar-content > button {
-        font-size: 1.25rem;
+        font-size: 2.25rem;
     }
     
     .sidebar-header > img {
-        width: 80px;
+        width: 85px;
     }
     
     .sidebar-footer {

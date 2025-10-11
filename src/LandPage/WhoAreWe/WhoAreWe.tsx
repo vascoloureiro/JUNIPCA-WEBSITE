@@ -24,7 +24,11 @@ export default function WhoAreWe() {
                                 <p>
                                     Atuamos como ponte entre a academia e o mundo empresarial, oferecendo 
                                     soluções inovadoras em diversas áreas, desde tecnologia e engenharia até 
-                                    gestão e consultoria. Nossa missão é desenvolver projetos de qualidade 
+                                    gestão e consultoria.
+                                </p>
+
+                                <p>
+                                     Nossa missão é desenvolver projetos de qualidade 
                                     que contribuam para o crescimento das organizações, enquanto preparamos 
                                     os nossos membros para os desafios do futuro profissional.
                                 </p>

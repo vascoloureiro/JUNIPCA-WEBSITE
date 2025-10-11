@@ -11,6 +11,9 @@ import 'mckedit-webcomponents/dist/webcomponent/index.esm.js';
 import './index.css';
 import LandPageIndex from './LandPage/landpage_Index';
 import Coockies from './LandPage/Geral/Coockies';
+import InstitutionIPCA from './LandPage/InfoSection/Instituicao/Coockies';
+import MissionJUNIPCA from './LandPage/InfoSection/Mission/MissionJUNIPCA';
+import PoliticasJUNIPCA from './LandPage/InfoSection/Policies/PoliticasJUNIPCA';
 
 const root = createRoot(document.querySelector('#root'));
 
@@ -20,10 +23,28 @@ const appRouter = createBrowserRouter([
     element: <LandPageIndex />,
   },
   {
-    path:'/coockies',
+    path: '/coockies',
     element: <Coockies />
+  },
+  {
+    path: '/ipca',
+    element: <InstitutionIPCA />
+  },
+  {
+    path: '/mission',
+    element: <MissionJUNIPCA />
+  },
+  {
+    path: '/vision/values',
+    element: <MissionJUNIPCA />
+  },
+    {
+    path: '/policys',
+    element: <PoliticasJUNIPCA />
   }
- 
+
+
+  
 ]);
 
 root.render(

@@ -40,8 +40,8 @@
 
 /* Variant: warning */
 .info-section.warning {
-  background-color: rgb(254, 245, 245);
-  border-left: 4px solid rgb(239, 67, 67);
+  background-color: rgb(245, 254, 247);
+  border-left: 4px solid rgb(73, 239, 67);
   padding: 2rem;
 }
 

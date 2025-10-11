@@ -1,9 +1,10 @@
 import { useNavigate } from 'react-router-dom';
 import './header.css';
 
-import { LuFacebook, LuInstagram, LuLinkedin, LuMenu, LuX } from 'react-icons/lu';
+import { LuFacebook, LuInstagram, LuLinkedin, LuMenu } from 'react-icons/lu';
 import SideBar from '../SideBarMenu/SideBar';
 import { useState } from 'react';
+import { FaLinkedinIn } from 'react-icons/fa';
 
 export default function HeaderLandPage() {
 
@@ -13,23 +14,20 @@ export default function HeaderLandPage() {
     const contentList = [
         'HOME',
         'ABOUT',
-        'SERVICES',
-        'TEAM',
+        'SERVICES'
     ];
 
     const footer = [
         {
             titleIcon: "Instagram",
-            icon: <LuInstagram size={28} />
+            icon: <LuInstagram size={28} />,
+            handleSocialClick: () => {window.open("https://www.instagram.com/junipca.je/", "_blank")}
         },
         {
             titleIcon: "Linkden",
-            icon: <LuLinkedin size={28} />
+            icon: <FaLinkedinIn size={28} />,
+            handleSocialClick: () => {window.open("https://www.linkedin.com/in/junipca-j%C3%BAnior-iniciativa-ipca-7b6006387/", "_blank")}
         },
-        {
-            titleIcon: "Facebook",
-            icon: <LuFacebook size={28} />
-        }
     ];
 
     const handleCloseSideBar = () => {
@@ -58,6 +56,7 @@ export default function HeaderLandPage() {
                         socialFooter={footer}
                         handleCloseSideBar={handleCloseSideBar}
                         handleClick={(content) => handleClick(content)}
+                        
                     />
                 </>
             )}
@@ -69,7 +68,8 @@ export default function HeaderLandPage() {
                     className="left-header-container"
                     onClick={() => setOpenSideBar(true)}
                 >
-                    <img src="./JUNIPCA_logo-white.png" alt="JUNIPCA Logo" />
+                   {/*  <img src="./JUNIPCA_logo-white.png" alt="JUNIPCA Logo" /> */}
+                   <LuMenu size={18} color="white" />
                 </div>
 
                 <div className="right-header-container">
@@ -79,9 +79,9 @@ export default function HeaderLandPage() {
                         About
                     </button>
                     <button
-                        onClick={() => { handleClick('team') }}
+                        onClick={() => { handleClick('services') }}
                     >
-                        Team
+                        Serviços
                     </button>
                 </div>
             </div>

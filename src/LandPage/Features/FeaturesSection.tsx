@@ -2,50 +2,65 @@
 // Style
 import CardContent from "../Modules/CardContent";
 import "./features.css";
-import { LuFileText, LuDatabase, LuPalette, LuUsers, LuClock, LuBookOpen } from "react-icons/lu";
+import {
+  LuSmartphone,
+  LuDatabase,
+  LuHeadphones,
+  LuSettings2,
+  LuCode,
+  LuChartArea
+} from "react-icons/lu";
 
 export default function Features() {
+
   const features = [
     {
-      icon: LuUsers,
-      title: "Consultoria Tecnológica",
-      description: "Analisamos e implementamos soluções tecnológicas adaptadas às necessidades da sua empresa, incluindo sistemas, software e infraestrutura.",
-      highlight: "Soluções personalizadas"
+      icon: LuCode,
+      title: "Desenvolvimento Web",
+      description:
+        "Criamos websites e aplicações web modernas, responsivas e otimizadas, garantindo uma experiência de utilizador fluida e adaptada às necessidades da sua empresa.",
+      highlight: "Soluções web personalizadas"
     },
     {
-      icon: LuPalette,
-      title: "Marketing Digital",
-      description: "Desenvolvemos estratégias de marketing digital para aumentar a visibilidade, presença online e interação com o público-alvo.",
-      highlight: "Estratégias eficazes"
+      icon: LuSmartphone,
+      title: "Aplicações Mobile",
+      description:
+        "Desenvolvemos aplicações móveis intuitivas e eficientes para Android e iOS, focadas em desempenho, design e integração perfeita com os seus serviços.",
+      highlight: "Apps nativas e híbridas"
     },
     {
       icon: LuDatabase,
+      title: "Base de Dados",
+      description:
+        "Projetamos, otimizamos e gerimos bases de dados seguras e escaláveis, assegurando desempenho, integridade e disponibilidade das informações da sua empresa.",
+      highlight: "Gestão eficiente de dados"
+    },
+    {
+      icon: LuChartArea,
       title: "Gestão de Dados",
-      description: "Oferecemos serviços de análise de dados, gestão de bases de dados e relatórios para decisões mais informadas.",
-      highlight: "Insights precisos"
+      description:
+        "Implementamos sistemas para recolha, tratamento e análise de dados, permitindo à sua empresa tomar decisões estratégicas baseadas em informação real.",
+      highlight: "Decisões orientadas por dados"
     },
     {
-      icon: LuFileText,
-      title: "Criação de Conteúdos",
-      description: "Produzimos conteúdos de qualidade, incluindo artigos, posts, newsletters e materiais multimédia para comunicação da sua marca.",
-      highlight: "Conteúdo envolvente"
-    },
-    {
-      icon: LuClock,
+      icon: LuHeadphones,
       title: "Suporte e Acompanhamento",
-      description: "Monitorizamos projetos e fornecemos suporte contínuo para garantir que todas as soluções implementadas funcionem eficientemente.",
-      highlight: "Acompanhamento contínuo"
+      description:
+        "Garantimos acompanhamento técnico contínuo e manutenção preventiva para assegurar o funcionamento estável e seguro das suas soluções digitais.",
+      highlight: "Assistência técnica contínua"
     },
     {
-      icon: LuBookOpen,
-      title: "Formação e Capacitação",
-      description: "Oferecemos workshops, treinamentos e capacitação para equipas, potenciando habilidades técnicas e digitais.",
-      highlight: "Aprendizado prático"
+      icon: LuSettings2,
+      title: "Serviços Personalizados",
+      description:
+        "Adaptamos os nossos serviços às necessidades específicas da sua empresa, incluindo consultoria, formação técnica e desenvolvimento sob medida.",
+      highlight: "Soluções sob medida"
     }
   ];
 
+
   return (
-    <section 
+    <section
       id="services"
       className="section-features">
       <div className="container-features">

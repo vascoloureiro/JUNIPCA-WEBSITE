@@ -3,13 +3,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+
+  min-width: 900px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   z-index: 5;
+  background-color: transparent;
 }
 
 .free-test {
@@ -54,7 +60,7 @@
   .see-demo {
     text-wrap: nowrap;
     font-size: 14px;
-   padding: 1rem;
+    padding: 1rem;
   }
 }
 

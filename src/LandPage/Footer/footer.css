@@ -47,6 +47,11 @@
   gap: 0.5rem;
 }
 
+
+.footer__logo > img{
+  width: 120px;
+  height: auto;
+}
 .footer__logo-text {
   font-size: 1.25rem;
   font-weight: 700;
@@ -64,6 +69,13 @@
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+}
+
+.footer__social > button {
+  display: flex;
+  cursor: pointer;
+  background-color: transparent;
+  border:none;
 }
 
 .footer__icon,
@@ -94,6 +106,7 @@
   margin: 0;
   padding: 0;
    color: #000000;
+      cursor: pointer;
 }
 
 .footer__list li + li {
@@ -120,7 +133,8 @@
   align-items: center;
   gap: 1rem;
    color: #000000;
-}
+} 
+
 
 @media (min-width: 768px) {
   .footer__bottom {
@@ -133,18 +147,16 @@
   display: flex;
   gap: 1.5rem;
    color: #000000;
+   cursor: pointer;
 }
 
 .footer__bottom-links a {
   font-size: 0.875rem;
   color: rgba(0, 0, 0, 0.7);
+     cursor: pointer;
 }
 
 .footer__bottom-links a:hover {
   color: #000000;
-}
-
-.footer-logo-image{
-  width: 220px;
-  height: auto;
+     cursor: pointer;
 }

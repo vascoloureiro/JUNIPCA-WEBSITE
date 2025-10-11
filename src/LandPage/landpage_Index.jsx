@@ -17,7 +17,7 @@ export default function LandPageIndex() {
       <HeroSection />
       <WhoAreWe />
       <Features />
-      <Team />
+      {/* <Team /> */}
       {/* <PricingSection />
 
       <TestimonialsSection /> */}

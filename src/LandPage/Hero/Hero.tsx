@@ -1,13 +1,13 @@
 import "./hero.css";
 import ButtonCustom from "../Modules/Buttom";
 import AnimationCursorBackground from "../Effects/AnimationCursorBackground";
-import { LuPhone, LuUsers } from "react-icons/lu";
+import { LuMail, LuMessageCircle, LuPhone, LuUsers } from "react-icons/lu";
 import SplitTextComponent from "../Effects/SplitText/SplitText";
 
 export default function HeroSection() {
   return (<>
 
-    <section 
+    <section
       id='home'
       className="hero-section"
     >
@@ -29,8 +29,8 @@ export default function HeroSection() {
                   textAlign="center"
                 />
               </h1>
-              <p className="hero-subtitle">      
-                Fazemos os seus projetos Acontecer
+              <p className="hero-subtitle">
+                Damos vida aos seus projetos
               </p>
             </div>
 
@@ -38,13 +38,19 @@ export default function HeroSection() {
               <ButtonCustom
                 btnTitle="Contacto-nos"
                 classBtn="free-test"
-                iconBtn={<LuPhone />}
+                iconBtn={<LuMail />}
+                onClickBtn={() =>
+                  window.location.href = "mailto:junipca@outlook.pt"
+                }
               />
 
               <ButtonCustom
-                btnTitle="A Equipa"
+                btnTitle="WhatsApp"
                 classBtn="see-demo"
-                iconBtn={<LuUsers size={18} />}
+                iconBtn={<LuMessageCircle size={18} />}
+                onClickBtn={() =>
+                  window.open("https://wa.me/351916812472?text=Olá!%20Quero%20mais%20informações%20sobre%20a%20JUNIPCA!.", "_blank")
+                }
               />
             </div>
 
